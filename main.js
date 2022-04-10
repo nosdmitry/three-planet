@@ -38,7 +38,7 @@ const rockMaterial = new THREE.MeshStandardMaterial({color: 0x212121});
 rockMaterial.metalness = 0.9;
 rockMaterial.roughness = .75;
 
-loader.load( 'models/test/top.glb', function ( gltf ) {
+loader.load( 'public/models/test/top.glb', function ( gltf ) {
   const model = gltf.scene;
   scene.add( model );
   top = model;
@@ -53,7 +53,7 @@ loader.load( 'models/test/top.glb', function ( gltf ) {
   console.error( error );
 } );
 
-loader.load( 'models/test/top2.glb', function ( gltf ) {
+loader.load( 'public/models/test/top2.glb', function ( gltf ) {
   scene.add( gltf.scene );
   top2 = gltf.scene;
   top2.traverse((o) => {
@@ -65,7 +65,7 @@ loader.load( 'models/test/top2.glb', function ( gltf ) {
   console.error( error );
 } );
 
-loader.load( 'models/test/middle.glb', function ( gltf ) {
+loader.load( 'public/models/test/middle.glb', function ( gltf ) {
   const model = gltf.scene;
   middle = gltf.scene;
   middle.traverse((o) => {
@@ -78,7 +78,7 @@ loader.load( 'models/test/middle.glb', function ( gltf ) {
   console.error( error );
 } );
 
-loader.load( 'models/test/bottom2.glb', function ( gltf ) {
+loader.load( 'public/models/test/bottom2.glb', function ( gltf ) {
   scene.add( gltf.scene );
   bottom2 = gltf.scene;
   bottom2.traverse((o) => {
@@ -90,7 +90,7 @@ loader.load( 'models/test/bottom2.glb', function ( gltf ) {
   console.error( error );
 } );
 
-loader.load( 'models/test/bottom.glb', function ( gltf ) {
+loader.load( 'public/models/test/bottom.glb', function ( gltf ) {
   scene.add( gltf.scene );
   bottom = gltf.scene;
   bottom.traverse((o) => {
